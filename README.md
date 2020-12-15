@@ -19,3 +19,16 @@ WebContent >>> index.jsp,
                CadastroPronto.jsp,
                ListarContas.jsp,
                ListarUsuarios.jsp
+
+
+Tabelas criadas no MySQL:
+
+CREATE TABLE usuario ( nome VARCHAR(40),
+					          tipoPessoa VARCHAR (10),
+                    numDoc VARCHAR (14),
+                    score VARCHAR(2),
+                    PRIMARY KEY (numDoc));
+                    
+CREATE TABLE conta ( numero VARCHAR(10), agencia VARCHAR(10), tipoConta VARCHAR(20), limite VARCHAR (10),
+		                 cartao VARCHAR(10),
+		                 nomeTitular VARCHAR(40));
