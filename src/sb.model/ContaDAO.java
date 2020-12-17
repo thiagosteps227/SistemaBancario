@@ -17,7 +17,7 @@ public class ContaDAO {
             " (?, ?, ?, ?,?,?);";
 
         int resultConta = 0;
-        //estabelecendo a conex„o
+        //estabelecendo a conex√£o
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager
@@ -34,7 +34,7 @@ public class ContaDAO {
             preparedStatement.setString(6, conta.getNomeTitular());
             
 
-            //System.out.println(preparedStatement); pra testar o cÛdigo
+            //System.out.println(preparedStatement); pra testar o c√≥digo
             
             resultConta = preparedStatement.executeUpdate();
 
@@ -48,7 +48,7 @@ public class ContaDAO {
 	public List < Conta > selectAllContas() throws Exception {
 
         List < Conta > conta = new ArrayList < > ();
-        // estabelecendo a conex„o
+        // estabelecendo a conex√£o
         Class.forName("com.mysql.cj.jdbc.Driver");
         
         try (Connection connection = DriverManager
@@ -57,7 +57,7 @@ public class ContaDAO {
             
             PreparedStatement preparedStatement = connection.prepareStatement("select * from conta");) {
         	
-            //System.out.println(preparedStatement); pra testar o cÛdigo
+            //System.out.println(preparedStatement); pra testar o c√≥digo
             
             ResultSet rs = preparedStatement.executeQuery();
 
