@@ -36,7 +36,7 @@ public class CadastroServlet extends HttpServlet {
 		String score = request.getParameter("score");
 		String agencia = request.getParameter("agencia");
 
-		//instanciando usuário e conta
+		//instanciando usuÃ¡rio e conta
 		Usuario usuario = new Usuario(nome, tipoPessoa, numDoc, score);
         Conta conta = new Conta();
 		
@@ -44,7 +44,7 @@ public class CadastroServlet extends HttpServlet {
 		String limite = "";
 		String cartao = "";
 		
-		//estabelecendo número randômico de conta
+		//estabelecendo nÃºmero randÃ´mico de conta
 		Random gerador = new Random();
 		int random = 0 ;
 		for (int i = 0; i<5; i++) {
@@ -61,7 +61,7 @@ public class CadastroServlet extends HttpServlet {
 		} else {
 			conta.setTipoConta("Empresarial");
 		}
-		//estabelecendo limites de conta e cartão com parametrização do score
+		//estabelecendo limites de conta e cartÃ£o com parametrizaÃ§Ã£o do score
 		int numScore = Integer.parseInt(score);
 		
 		if (numScore == 0 || numScore == 1) {
@@ -108,7 +108,7 @@ public class CadastroServlet extends HttpServlet {
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     		
-    		//parâmetro identificador do GET que está sendo chamado no index.
+    		//parÃ¢metro identificador do GET que estÃ¡ sendo chamado no index.
     		String type = request.getParameter("formType");
     		
     		if (type.equals("conta")) {
