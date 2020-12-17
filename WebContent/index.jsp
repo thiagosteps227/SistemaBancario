@@ -11,23 +11,23 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 <body style="background-color: tomato; height:100%; width:100%;">
 	
 	<div style="height: 100%; width: 100%; float: center; text-align: center">
-		<h1 style="text-align:center; color: black">Cadastro de Usuário:</h1>
+		<h1 style="text-align:center; color: black">Cadastro de UsuÃ¡rio:</h1>
 		
 		<form action="<%= request.getContextPath() %>/register" method="post">
 	
 			Nome: <input type="text" name = "nome" placeholder="Escreva seu nome aqui"
 			style="margin: 5px;"><br>
 		
-			Tipo de Pessoa(Física ou Jurídica) : <input type="text" name="tipoPessoa" 
+			Tipo de Pessoa(FÃ­sica ou JurÃ­dica) : <input type="text" name="tipoPessoa" 
 			placeholder="PF ou PJ"><br>
 		
-			Número do Documento: <input type="text" name="numDoc" 
-			placeholder="CPF/CNPJ somente números" maxlength=14; style="margin: 5px;"><br>
+			NÃºmero do Documento: <input type="text" name="numDoc" 
+			placeholder="CPF/CNPJ somente nÃºmeros" maxlength=14; style="margin: 5px;"><br>
 			
 			Score: <input type="text" name="score"
 			 style="margin: 5px;"><br>
 			 
-			Agência: <input type="text" name="agencia"
+			AgÃªncia: <input type="text" name="agencia"
 			style="margin: 5px;"><br>
 			
 			
@@ -38,7 +38,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 		<form action="<%= request.getContextPath() %>/register" method="get">
 			
 			<input type="hidden" name="formType" value="usuario">
-			<input type="submit" value="Ver Usuários cadastrados" style="margin: 5px;" >
+			<input type="submit" value="Ver UsuÃ¡rios cadastrados" style="margin: 5px;" >
 	
 		</form>
 		
