@@ -34,7 +34,7 @@ public class UsuarioDAO {
             preparedStatement.setString(4, usuario.getScore());
             
 
-            //System.out.println(preparedStatement);pra testar o código
+            //System.out.println(preparedStatement);pra testar o cÃ³digo
             
             result = preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -62,7 +62,7 @@ public class UsuarioDAO {
             
             PreparedStatement preparedStatement = connection.prepareStatement("select * from usuario");) {
         	
-            //System.out.println(preparedStatement); pra testar o código
+            //System.out.println(preparedStatement); pra testar o cÃ³digo
             
             ResultSet rs = preparedStatement.executeQuery();
 
